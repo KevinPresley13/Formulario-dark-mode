@@ -21,6 +21,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
 }
 header{
     display: flex;
@@ -33,8 +34,57 @@ header{
 header input{
     display: none;
 }
+header label{
+    color: var(--color-font-h2);
+    font-size: 1.1rem;
+    transition: .5s;
+}
 h2{
     font-size: 2.2rem;
     color: var(--color-font-form);
     text-transform: capitalize;
+}
+main{
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+}
+.form{
+    text-align: start;
+    padding: 2.5rem;
+    max-width: 500px;
+    background-color: var(--color-background-form);
+    border-radius: 10%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input[type=button]{
+    font-size: .7rem;
+    width: 80px;
+    color: var(--color-font-form);
+    padding: .3rem .6rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: .3rem;
+    background-color: var(--color-background);
+    transition: .5s;
+}
+input[type=button]:hover{
+    transform: scale(1.2);
+}
+form label{
+    font-size: 1.1rem;
+    color: var(--color-font-form);
+    margin: .5rem 0 ;
+}
+form input{
+    padding: .3rem .6rem;
+    outline: none;
+    border: none;
+    border-radius: .6rem;
+    margin-bottom: .5rem;
+    color: var(--color-background-form);
 }
