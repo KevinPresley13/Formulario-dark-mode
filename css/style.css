@@ -1,10 +1,15 @@
-
-
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /**VARIAVEIS**/
-
-
+:root{
+    --color-backgraund:#a2b9ee;
+    --color-backgraund-form: #9a9cea;
+    --color-font-h2: #a2dcee;
+    --color-font-form: #adeee2;
+}
 .dark{
     --color-backgraund:#355c7d;
     --color-backgraund-form: #725a7a;
