@@ -6,4 +6,10 @@ function toggleDarkMode (){
 
 changeBtn.addEventListener("change", ()=> {
     toggleDarkMode();
+
+    localStorage.removeItem("dark")
+
+    if(document.body.classList.contains("dark")){
+        localStorage.setItem("dark", 1)
+    }
 });
