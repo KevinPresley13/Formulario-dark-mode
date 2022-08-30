@@ -11,10 +11,12 @@
     --color-font-h2: #adeee2;
 }
 .dark{
+    background-color: #222222;
     --color-background:#355c7d;
     --color-background-form: #725a7a;
     --color-font-h2: #ff7582;
     --color-font-form: #c56c86;
+    transition: 0.5s;
 }
 body{
     display: flex;
