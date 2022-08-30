@@ -102,3 +102,9 @@ form input{
     margin-bottom: .5rem;
     color: var(--color-background-form);
 }
+
+@media (max-width: 450px) {
+    header h2{
+        font-size: 1.6rem;
+    }
+}
