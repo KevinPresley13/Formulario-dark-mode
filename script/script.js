@@ -4,6 +4,14 @@ function toggleDarkMode (){
     document.body.classList.toggle("dark");
 }
 
+function loadTheme(){
+    let darkMode = localStorage.getItem("dark")
+
+    if(darkMode){
+        toggleDarkMode()
+    }
+};
+loadTheme()
 changeBtn.addEventListener("change", ()=> {
     toggleDarkMode();
 
