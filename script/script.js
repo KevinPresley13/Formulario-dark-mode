@@ -1,5 +1,9 @@
 const changeBtn = document.querySelector("#change-mode");
 
-changeBtn.addEventListener("change", ()=> {
+function toggleDarkMode (){
     document.body.classList.toggle("dark");
+}
+
+changeBtn.addEventListener("change", ()=> {
+    toggleDarkMode();
 });
